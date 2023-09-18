@@ -1,1 +1,40 @@
 /*  your css code here. If applicable */
+:root{
+	background-color: rgb(135, 206, 235);
+}
+ p:first-child {
+            color: white;
+            background-color: black;
+        }
+
+        /* Second paragraph: Standard text color */
+        p:nth-child(2) {
+            color: inherit; /* Inherits the text color from the parent element */
+        }
+
+        /* Third paragraph: Red text */
+       p:last-child {
+            color: red;
+        }
+	li {
+            width: 50%;
+            padding: 10px;
+            background-color: gray;
+            font-size: 16px;
+        }
+
+        /* Every odd item has a white background */
+        li:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* First and last items */
+        li:first-child,
+        li:last-child {
+            font-size: 22px;
+        }
+
+        /* Third-to-last item */
+        li:nth-last-child(3) {
+            background-color: pink;
+        }
